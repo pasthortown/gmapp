@@ -9,4 +9,11 @@
 
 <ion-content>
     <div #gmap id="gmap" col-12></div>
+    <ion-fab right top>
+      <button ion-fab color="light"><ion-icon name="map"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab (click)="getRoute()"><ion-icon name="git-compare"></ion-icon></button>
+        <button ion-fab (click)="irAlDestino()"><ion-icon name="compass"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
 </ion-content>
